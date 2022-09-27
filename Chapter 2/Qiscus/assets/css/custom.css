@@ -1,0 +1,598 @@
+/* Basic */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Inter UI";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://rsms.me/inter/font-files/Inter-Regular.woff2?v=3.7)
+      format("woff2"),
+    url(https://rsms.me/inter/font-files/Inter-Regular.woff?v=3.7)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Inter UI";
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url(https://rsms.me/inter/font-files/Inter-Medium.woff2?v=3.7)
+      format("woff2"),
+    url(https://rsms.me/inter/font-files/Inter-Medium.woff?v=3.7) format("woff");
+}
+
+@font-face {
+  font-family: "Inter UI";
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+  src: url(https://rsms.me/inter/font-files/Inter-SemiBold.woff2?v=3.7)
+      format("woff2"),
+    url(https://rsms.me/inter/font-files/Inter-SemiBold.woff?v=3.7)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Inter UI";
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url(https://rsms.me/inter/font-files/Inter-Bold.woff2?v=3.7)
+      format("woff2"),
+    url(https://rsms.me/inter/font-files/Inter-Bold.woff?v=3.7) format("woff");
+}
+
+@font-face {
+  font-family: "Inter var";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(../fonts/Inter-roman-latin.var.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Inter var";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(../fonts/Inter-italic-latin.var.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: local("Poppins Bold"), local("Poppins-Bold"),
+    url(https://fonts.gstatic.com/s/poppins/v5/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+body,
+html {
+  font-family: Inter UI, sans-serif, GT Maru, GT Maru Bold, GT Maru Italic,
+    GT Maru Medium, GT Maru Regular;
+  line-height: 1.5;
+  color: #01416c;
+}
+
+@supports (font-variation-settings: normal) {
+  body,
+  html {
+    font-family: "Inter var", Inter UI, sans-serif;
+  }
+}
+
+blockquote,
+dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  color: #01416c;
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.032em;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 50.4px;
+}
+
+h4 {
+  line-height: 120%;
+  letter-spacing: -0.016em;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.box {
+  width: 320px;
+  height: 126px;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: -0.018em;
+}
+
+.mt-6 {
+  margin-top: 6rem !important;
+}
+
+.mt-7 {
+  margin-top: 12rem !important;
+}
+
+.mt-8 {
+  margin-top: 20rem !important;
+}
+
+/*Navigasi*/
+.navbar .container a > img {
+  width: 104px;
+}
+
+.navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link {
+  color: #01416c;
+  line-height: 2;
+  align-items: center;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: #01416c;
+}
+
+.navbar-shadow {
+  box-shadow: 0 40px 60px rgb(51 51 51 / 5%);
+}
+
+.dropdown-toggle::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='black' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath stroke='%23000' stroke-width='0.5' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'%3E%3C/path%3E%3C/svg%3E");
+  border: 0;
+  margin-left: 0.2em;
+  vertical-align: 0;
+}
+
+.btn-qiscus {
+  color: #fff;
+  height: 2.5rem;
+  margin-top: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #01416c;
+}
+
+.btn-qiscus:hover {
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #01416c;
+}
+
+/*Hero*/
+#heroQiscus {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+#heroQiscus .container-fluid .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+}
+
+#heroQiscus .container-fluid .row .col {
+  width: 100%;
+}
+
+#heroQiscus .container-fluid .row .col h1 {
+  font-size: 24px;
+  line-height: 135%;
+}
+
+#heroQiscus .container-fluid .row .col p {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #383838;
+  line-height: 150%;
+  letter-spacing: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#heroQiscus .container-fluid .row .col img {
+  max-width: 229px;
+  height: 221px;
+}
+
+/*Client*/
+#clientsQiscus .container div h2 {
+  font-size: 24px;
+}
+
+#clientsQiscus .container div .subtitle {
+  color: #111;
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  line-height: 140%;
+}
+
+/*Treatment*/
+#treatmentQiscus .container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#treatmentQiscus .container .row .col h4 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.125rem;
+  margin-bottom: 12px;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+#treatmentQiscus .container .row .col .description {
+  color: #383838;
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+#treatmentQiscus .container .row .col img {
+  border-radius: 12px;
+  width: 312px;
+}
+
+/*Solutions*/
+#solutionsQiscus .container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 90px;
+  padding-left: 90px;
+  width: 100%;
+}
+
+#solutionsQiscus .container div h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 135%;
+}
+
+#solutionsQiscus .container div .row {
+  gap: 16px 0;
+}
+
+footer {
+  background-color: #00365a;
+  color: #fff !important;
+  font-size: 14px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 575px) {
+  h2 {
+    font-size: 32px;
+    line-height: 118%;
+    letter-spacing: -0.02em;
+  }
+  #heroQiscus .container-fluid {
+    padding-right: 38px;
+    padding-left: 38px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  h2 {
+    font-size: 32px;
+    line-height: 118%;
+    letter-spacing: -0.02em;
+  }
+
+  @media (min-width: 376px) {
+    .row-cols-lg-8 > * {
+      flex: 0 0 auto;
+      width: 12%;
+    }
+
+    #heroQiscus .container-fluid {
+      max-width: 376px;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .row-cols-lg-8 > * {
+    flex: 0 0 auto;
+    width: 12%;
+  }
+
+  #solutionsQiscus .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    max-width: 576px;
+  }
+
+  #heroQiscus .container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    max-width: 576px;
+  }
+
+  #heroQiscus .container-fluid .row .col img {
+    max-width: 380px;
+    height: 385px;
+  }
+
+  #treatmentQiscus .container .row .col .description {
+    font-weight: 500;
+  }
+
+  #treatmentQiscus .container .row .col img {
+    width: 492px;
+    height: 336px;
+  }
+
+  #solutionsQiscus .container div h2 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .row-cols-lg-8 > * {
+    flex: 0 0 auto;
+    width: 12%;
+  }
+
+  #solutionsQiscus .container {
+    max-width: 768px;
+  }
+
+  #heroQiscus {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  #heroQiscus .container-fluid {
+    max-width: 768px;
+  }
+
+  #heroQiscus .container-fluid .row {
+    gap: 62px;
+  }
+
+  #heroQiscus .container-fluid .row .col {
+    max-width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #heroQiscus .container-fluid .row .col h1 {
+    font-size: 32px;
+  }
+
+  #heroQiscus .container-fluid .row .col p {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1rem;
+    line-height: 22.4px;
+  }
+
+  #clientsQiscus .container div h2 {
+    font-size: 32px;
+  }
+
+  #clientsQiscus .container div .subtitle {
+    font-size: 1rem;
+    line-height: 25.2px;
+  }
+
+  #treatmentQiscus .container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  #treatmentQiscus .container .row .col h4 {
+    font-size: 1.25rem;
+    line-height: 25.2px;
+    margin-bottom: 1.5rem;
+  }
+
+  #treatmentQiscus .container .row .col .description {
+    font-size: 14px;
+    line-height: 22.4px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 492px;
+  }
+
+  #solutionsQiscus .container div .row {
+    gap: 20px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .row-cols-lg-8 > * {
+    flex: 0 0 auto;
+    width: 12%;
+  }
+
+  #solutionsQiscus .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 90px;
+    padding-left: 90px;
+    max-width: 992px;
+  }
+
+  .navbar-nav .nav-link,
+  .navbar-light .navbar-nav .nav-link {
+    line-height: 1.5;
+    font-size: 0.875rem;
+  }
+
+  .navbar .container a > img {
+    width: 100px;
+  }
+
+  #heroQiscus {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  #heroQiscus .container-fluid {
+    padding-right: 90px;
+    padding-left: 90px;
+    max-width: 992px;
+  }
+
+  #heroQiscus .container-fluid .row {
+    text-align: left;
+    gap: 86px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  #heroQiscus .container-fluid .row .col {
+    max-width: 100%;
+    width: calc(50% - 86px);
+  }
+
+  #heroQiscus .container-fluid .row .col h1 {
+    font-size: 42px;
+    letter-spacing: -0.02em;
+  }
+
+  #heroQiscus .container-fluid .row .col p {
+    font-size: 1.125rem;
+    line-height: 27px;
+  }
+
+  #clientsQiscus .container div h2 {
+    font-size: 40px;
+  }
+
+  #clientsQiscus .container div .subtitle {
+    line-height: 33px;
+    font-size: 22px;
+  }
+
+  #treatmentQiscus .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  #treatmentQiscus .container .row .col h4 {
+    text-align: left;
+    line-height: 135%;
+    letter-spacing: -0.016em;
+    font-size: 1.5rem;
+  }
+
+  #treatmentQiscus .container .row .col .description {
+    text-align: left;
+    font-size: 1.125rem;
+    line-height: 25.2px;
+    max-width: unset;
+  }
+}
+
+@media (min-width: 1280px) {
+  .row-cols-lg-8 > * {
+    flex: 0 0 auto;
+    width: 12%;
+  }
+
+  #solutionsQiscus .container {
+    max-width: 1280px;
+  }
+
+  .navbar-nav .nav-link,
+  .navbar-light .navbar-nav .nav-link {
+    line-height: 1.5;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  .navbar .container a > img {
+    width: 125px;
+  }
+
+  #heroQiscus .container-fluid {
+    max-width: 1280px;
+  }
+
+  #heroQiscus .container-fluid .row {
+    gap: 102px;
+  }
+  #heroQiscus .container-fluid .row .col {
+    min-width: 550px;
+  }
+
+  #heroQiscus .container-fluid .row .col img {
+    max-width: 466px;
+    height: auto;
+  }
+
+  #treatmentQiscus .container .row .col img {
+    width: 510px;
+    height: 360px;
+  }
+
+  #solutionsQiscus .container div h2 {
+    font-size: 40px;
+  }
+
+  #solutionsQiscus .container div .row {
+    gap: 24px 48px;
+  }
+
+  footer {
+    margin-top: 0;
+    font-size: 0.875rem;
+    color: #111;
+  }
+}
