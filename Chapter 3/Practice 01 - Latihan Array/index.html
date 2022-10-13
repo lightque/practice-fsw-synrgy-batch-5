@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Practice 3 - FSW Binar</title>
+    <script type="text/javascript" src="custom.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      console.log(
+        "Daftar Steam Account : \n" +
+          "1. " +
+          steamAccount[0].username +
+          "\n2. " +
+          steamAccount[1].username
+      );
+
+      console.log(
+        "Daftar Teman : " +
+          steamAccount[0].username +
+          "\n1. " +
+          steamAccount[0].friends[0].username +
+          "\n2. " +
+          steamAccount[0].friends[1].username
+      );
+      console.log(
+        "List Game & Rank " +
+          steamAccount[0].friends[0].username +
+          ": \n1. " +
+          steamAccount[0].friends[0].games[0].name +
+          ", " +
+          steamAccount[0].friends[0].games[0].rank +
+          "\n2. " +
+          steamAccount[0].friends[0].games[1].name +
+          ", " +
+          steamAccount[0].friends[0].games[1].rank
+      );
+      console.log(
+        "List Game & Rank " +
+          steamAccount[0].friends[1].username +
+          ": \n1. " +
+          steamAccount[0].friends[1].games[0].name +
+          ", " +
+          steamAccount[0].friends[1].games[0].rank +
+          "\n2. " +
+          steamAccount[0].friends[1].games[1].name +
+          ", " +
+          steamAccount[0].friends[1].games[1].rank
+      );
+      console.log("\n\n");
+
+      console.log(
+        "Daftar Teman : " +
+          steamAccount[1].username +
+          "\n1. " +
+          steamAccount[1].friends[0].username +
+          "\n2. " +
+          steamAccount[1].friends[1].username
+      );
+      console.log(
+        "List Game & Rank " +
+          steamAccount[1].friends[0].username +
+          ": \n1. " +
+          steamAccount[1].friends[0].games[0].name +
+          ", " +
+          steamAccount[1].friends[0].games[0].rank +
+          "\n2. " +
+          steamAccount[1].friends[0].games[1].name +
+          ", " +
+          steamAccount[1].friends[0].games[1].rank +
+          "\n3. " +
+          steamAccount[1].friends[0].games[2].name +
+          ", " +
+          steamAccount[1].friends[0].games[2].rank
+      );
+      console.log(
+        "List Game & Rank " +
+          steamAccount[1].friends[1].username +
+          ": \n1. " +
+          steamAccount[1].friends[1].games[0].name +
+          ", " +
+          steamAccount[1].friends[1].games[0].rank +
+          "\n2. " +
+          steamAccount[1].friends[1].games[1].name +
+          ", " +
+          steamAccount[1].friends[1].games[1].rank
+      );
+    </script>
+  </body>
+</html>
